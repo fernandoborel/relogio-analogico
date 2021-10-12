@@ -10,6 +10,9 @@ function updateClock() {
     let second = now.getSeconds();
 
     digitalElement.innerHTML = `${fixZero(hour)}:${fixZero(minute)}:${fixZero(second)}`;
+
+    sElement.style.transform = 'rotate(45deg)';
+
 }
 
 function fixZero(time) {
